@@ -1,0 +1,332 @@
+
+*** Running vivado
+    with args -log lab2_1_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab2_1_1.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source lab2_1_1.tcl -notrace
+Command: synth_design -top lab2_1_1 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19188 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 357.125 ; gain = 98.383
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'lab2_1_1' [G:/LAB2/lab2_1_1/lab2_1_1.srcs/sources_1/new/lab2_1_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'lab2_1_1' (1#1) [G:/LAB2/lab2_1_1/lab2_1_1.srcs/sources_1/new/lab2_1_1.v:23]
+WARNING: [Synth 8-3330] design lab2_1_1 has an empty top module
+WARNING: [Synth 8-3917] design lab2_1_1 has port seg[6] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_1_1 has port seg[5] driven by constant 1
+WARNING: [Synth 8-3917] design lab2_1_1 has port seg[4] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_1_1 has port seg[3] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_1_1 has port seg[2] driven by constant 1
+WARNING: [Synth 8-3917] design lab2_1_1 has port seg[1] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_1_1 has port seg[0] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_1_1 has port an[7] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_1_1 has port an[6] driven by constant 1
+WARNING: [Synth 8-3917] design lab2_1_1 has port an[5] driven by constant 1
+WARNING: [Synth 8-3917] design lab2_1_1 has port an[4] driven by constant 1
+WARNING: [Synth 8-3917] design lab2_1_1 has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design lab2_1_1 has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design lab2_1_1 has port an[1] driven by constant 1
+WARNING: [Synth 8-3917] design lab2_1_1 has port an[0] driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 412.641 ; gain = 153.898
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 412.641 ; gain = 153.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 412.641 ; gain = 153.898
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'x[0]'. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[1]'. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[2]'. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[3]'. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swt[4]'. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swt[5]'. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swt[6]'. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'swt[7]'. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/LAB2/lab2_1_1/lab2_1_1.srcs/constrs_1/imports/tutorial/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab2_1_1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/lab2_1_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 663.699 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 663.699 ; gain = 404.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 663.699 ; gain = 404.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 663.699 ; gain = 404.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 663.699 ; gain = 404.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3330] design lab2_1_1 has an empty top module
+WARNING: [Synth 8-3917] design lab2_1_1 has port seg[6] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_1_1 has port seg[5] driven by constant 1
+WARNING: [Synth 8-3917] design lab2_1_1 has port seg[4] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_1_1 has port seg[3] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_1_1 has port seg[2] driven by constant 1
+WARNING: [Synth 8-3917] design lab2_1_1 has port seg[1] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_1_1 has port seg[0] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_1_1 has port an[7] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_1_1 has port an[6] driven by constant 1
+WARNING: [Synth 8-3917] design lab2_1_1 has port an[5] driven by constant 1
+WARNING: [Synth 8-3917] design lab2_1_1 has port an[4] driven by constant 1
+WARNING: [Synth 8-3917] design lab2_1_1 has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design lab2_1_1 has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design lab2_1_1 has port an[1] driven by constant 1
+WARNING: [Synth 8-3917] design lab2_1_1 has port an[0] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 663.699 ; gain = 404.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 729.711 ; gain = 470.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 729.711 ; gain = 470.969
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 729.711 ; gain = 470.969
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 730.840 ; gain = 472.098
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 730.840 ; gain = 472.098
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 730.840 ; gain = 472.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 730.840 ; gain = 472.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 730.840 ; gain = 472.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 730.840 ; gain = 472.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |OBUF |    15|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    15|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 730.840 ; gain = 472.098
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 730.840 ; gain = 221.039
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 730.840 ; gain = 472.098
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+12 Infos, 48 Warnings, 16 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 752.824 ; gain = 506.953
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'G:/LAB2/lab2_1_1/lab2_1_1.runs/synth_1/lab2_1_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file lab2_1_1_utilization_synth.rpt -pb lab2_1_1_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 752.824 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 19 18:33:38 2018...

@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/LAB2/lab2_2_1PartA/lab2_2_1PartA.srcs/sources_1/new/lab2_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1
+INFO: [VRFC 10-311] analyzing module lab2_2_1_partA
+INFO: [VRFC 10-311] analyzing module lab2_2_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/LAB2/lab2_2_1PartA/lab2_2_1PartA.srcs/sim_1/imports/lab2_2_1/lab2_2_1_partA_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab2_2_1_partA_tb
